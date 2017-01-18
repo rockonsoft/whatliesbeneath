@@ -15,18 +15,18 @@ namespace whatliesbeneath
 
         static void Main(string[] args)
         {
-            (new Program()).Run().Wait();
+            (new Program()).Run();
         }
 
         CancellationTokenSource cancelSource = new CancellationTokenSource();
-        internal async Task<object> ReadResource()
+        internal object ReadResource()
         {
-            await Task.Delay(TimeSpan.FromSeconds(5));
+            Task.Delay(TimeSpan.FromSeconds(5));
             cancelSource.Cancel();
             return new {Name = "test", Description = "TestDescription"};
         }
 
-        internal  Task Count(CancellationToken cancelToken)
+        internal void Count(CancellationToken cancelToken)
         {
             Console.WriteLine($"Start counting...");
             int start = 0;
@@ -34,21 +34,18 @@ namespace whatliesbeneath
             {
                 if (cancelToken.IsCancellationRequested)
                 {
-                    return Task.CompletedTask;
+                    return;
                 }
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine($"Counting Down:{++start}");
             }
         }
 
-        internal async Task Run()
+        internal void Run()
         {
-            var t1 = ReadResource();
-            var t2 = Count(cancelSource.Token);
-
-            await Task.WhenAll(t1, t2);
-            dynamic result = t1.Result;
+            dynamic result = ReadResource();
             Console.WriteLine($"The resource returned:{result.Name}");
+            Count(cancelSource.Token);
 
             Console.WriteLine("Completed. Press any key");
             Console.ReadKey();
