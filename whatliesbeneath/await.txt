@@ -1,0 +1,40 @@
+﻿___[MOD] c:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\bin\Debug\whatliesbeneath.exe
+   |      M A N I F E S T
+   |___[NSP] whatliesbeneath
+   |   |___[CLS] whatliesbeneath.Program
+   |   |   |     .class private auto ansi beforefieldinit 
+   |   |   |___[CLS] <ReadResource>d__2
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class whatliesbeneath.Program
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<int32>
+   |   |   |   |___[FLD] <>u__1 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[CLS] <Run>d__4
+   |   |   |   |     .class nested private auto ansi sealed beforefieldinit 
+   |   |   |   |      implements [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine 
+   |   |   |   |     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 )  ...
+   |   |   |   |___[FLD] <>1__state : public int32
+   |   |   |   |___[FLD] <>4__this : public class whatliesbeneath.Program
+   |   |   |   |___[FLD] <>s__2 : private int32
+   |   |   |   |___[FLD] <>t__builder : public valuetype [mscorlib]System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+   |   |   |   |___[FLD] <>u__1 : private valuetype [mscorlib]System.Runtime.CompilerServices.TaskAwaiter`1<int32>
+   |   |   |   |___[FLD] <result>5__1 : private int32
+   |   |   |   |___[MET] .ctor : void()
+   |   |   |   |___[MET] MoveNext : void()
+   |   |   |   |___[MET] SetStateMachine : void(class [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine)
+   |   |   |
+   |   |   |___[FLD] cancelSource : private class [mscorlib]System.Threading.CancellationTokenSource
+   |   |   |___[MET] .ctor : void()
+   |   |   |___[MET] Count : int32(valuetype [mscorlib]System.Threading.CancellationToken)
+   |   |   |___[STM] Main : void(string[])
+   |   |   |     ReadResource : class [mscorlib]System.Threading.Tasks.Task`1<int32>()
+   |   |   |___[MET] Run : class [mscorlib]System.Threading.Tasks.Task()
+   |   |
+   |
+

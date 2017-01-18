@@ -19,14 +19,15 @@ namespace whatliesbeneath
         }
 
         CancellationTokenSource cancelSource = new CancellationTokenSource();
-        internal async Task<object> ReadResource()
+        internal async Task<int> ReadResource()
         {
+            Console.WriteLine("Start reading resource");
             await Task.Delay(TimeSpan.FromSeconds(5));
             cancelSource.Cancel();
-            return new {Name = "test", Description = "TestDescription"};
+            return 42;
         }
 
-        internal  Task Count(CancellationToken cancelToken)
+        internal int Count(CancellationToken cancelToken)
         {
             Console.WriteLine($"Start counting...");
             int start = 0;
@@ -34,21 +35,23 @@ namespace whatliesbeneath
             {
                 if (cancelToken.IsCancellationRequested)
                 {
-                    return Task.CompletedTask;
+                    return start;
                 }
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine($"Counting Down:{++start}");
             }
         }
 
+        public Dictionary<string, List<IEnumerable<Program>>> ComplicatedFunction()
+        {
+            return new Dictionary<string, List<IEnumerable<Program>>>();
+        }
+
         internal async Task Run()
         {
-            var t1 = ReadResource();
-            var t2 = Count(cancelSource.Token);
-
-            await Task.WhenAll(t1, t2);
-            dynamic result = t1.Result;
-            Console.WriteLine($"The resource returned:{result.Name}");
+            var result = ReadResource();
+            Count(cancelSource.Token);
+            Console.WriteLine($"The resource returned:{result}");
 
             Console.WriteLine("Completed. Press any key");
             Console.ReadKey();
