@@ -1,0 +1,6 @@
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\bin\Debug\whatliesbeneath.exe.config
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\bin\Debug\whatliesbeneath.exe
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\bin\Debug\whatliesbeneath.pdb
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\obj\Debug\whatliesbeneath.csprojResolveAssemblyReference.cache
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\obj\Debug\whatliesbeneath.exe
+C:\Users\Hano\blogs\whatliesbeneath\whatliesbeneath\obj\Debug\whatliesbeneath.pdb
