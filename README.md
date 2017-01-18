@@ -11,6 +11,18 @@ It then calls the GetResource() [an IO bound operation] and Count [a CPU bound o
 
 Each section below corresponds to a branch on the repo exploring a different approach or solution.
 
+## Scenario0
+This is the program without any async keyword and the functions are called as follows:
+```C#
+        dynamic result = ReadResource();
+        Console.WriteLine($"The resource returned:{result.Name}");
+        Count(cancelSource.Token);
+```
+
+This version does not function corretly because the Count function is called after the ReadResource completes, setting the CancelationToken.
+The Count function enters, but never starts counting because the token is set.
+The decompiled IL for this version is included in the source.
+
 ## Scenario1
 
 With this attempt, the functions are called:
