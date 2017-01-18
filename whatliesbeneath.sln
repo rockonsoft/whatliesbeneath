@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		whatliesbeneath\no-await.txt = whatliesbeneath\no-await.txt
 		whatliesbeneath\Program.il = whatliesbeneath\Program.il
 		README.md = README.md
-		whatliesbeneath\Scenario1 no await.il = whatliesbeneath\Scenario1 no await.il
-		whatliesbeneath\Scenario1 with await.il = whatliesbeneath\Scenario1 with await.il
 	EndProjectSection
 EndProject
 Global
